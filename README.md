@@ -23,24 +23,19 @@ This project leverages Quantum Machine Learning (QML) techniques, such as Quantu
 we developed a QSVM due to its counterparts preformance in the classical approach, and we also dont have access to many Quantum models due to the fact that its a new field (QML).
 
 
-#Repository Structure 
+# Repository Structure 
 ```text
 .
 └─ parkinsons/
-    ├─ catboost_info/
-    │   ├─ learn/
-    │   ├─ catboost_training.json
-    │   ├─ learn_error.tsv
-    │   └─ time_left.tsv
-    ├─ parkinsons.data
-    ├─ pd_speech_features.csv
-    ├─ qsvm_training.ipynb
-    ├─ quantum_kernel.npy
-    ├─ test.ipynb
-    ├─ test_data.npy
-    ├─ test_hardware.ipynb
-    ├─ classical_model_testing_main.ipynb
-    └─ train_data.npy
+    ├─ parkinsons.data -> training data
+    ├─ pd_speech_features.csv -> training data, different format
+    ├─ qsvm_training.ipynb -> training quantum notebook with experiments
+    ├─ quantum_kernel.npy -> trained svm
+    ├─ test.ipynb -> eda and experimentation
+    ├─ test_data.npy -> testing data in npy for convenient loading
+    ├─ test_hardware.ipynb -> attempting to run on IBM qpu
+    ├─ classical_model_testing_main.ipynb -> inference pipeline with and without noise
+    └─ train_data.npy -> training data in npy for convenient loading
 
 ```
 # contribution
